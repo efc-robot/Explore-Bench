@@ -1,0 +1,11 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_footprint
+
+  update_frequency: 10.0
+  publish_frequency: 10.0
+  transform_tolerance: 0.5
+  always_send_full_costmap: true
+
+  static_map: true
+ 

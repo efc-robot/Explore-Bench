@@ -1,0 +1,9 @@
+[submodule "onpolicy/envs/iGibson"]
+	path = onpolicy/envs/iGibson
+	url = https://github.com/zoeyuchao/iGibson.git
+[submodule "onpolicy/envs/habitat/habitat-sim"]
+	path = onpolicy/envs/habitat/habitat-sim
+	url = https://github.com/zoeyuchao/habitat-sim.git
+[submodule "onpolicy/envs/habitat/habitat-lab"]
+	path = onpolicy/envs/habitat/habitat-lab
+	url = https://github.com/zoeyuchao/habitat-lab.git

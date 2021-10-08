@@ -1,0 +1,17 @@
+<!-- Launch file for the cost-based exploration -->
+
+
+<launch>
+  <arg name="namespace1" value="robot1"/>
+  <arg name="namespace2" value="robot2"/>
+  <param name="namespace_init_count" value="1"/>
+
+  <node pkg="exploration_benchmark" type="publish_tf_for_two_robots.py" name="publish_tf" output="screen"/>
+
+  <node pkg="rviz" type="rviz" name="$(arg namespace1)_rviz" args="-d $(find exploration_benchmark)/rviz/robot1_rl_node.rviz" />
+  <node pkg="rviz" type="rviz" name="$(arg namespace2)_rviz" args="-d $(find exploration_benchmark)/rviz/robot2_rl_node.rviz" />
+
+</launch>
+
+
+

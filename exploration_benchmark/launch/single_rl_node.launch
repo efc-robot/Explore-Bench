@@ -1,0 +1,11 @@
+<!-- Launch file for the rrt-detector and the assigner -->
+
+
+<launch>
+  <arg name="namespace" value="robot1"/>
+  <param name="namespace_init_count" value="1"/>
+  <node pkg="rviz" type="rviz" name="$(arg namespace)_rviz" args="-d $(find exploration_benchmark)/rviz/robot1_rl_node.rviz" />  
+</launch>
+
+
+
