@@ -72,7 +72,7 @@ roslaunch sim_env {number_robots}_{suffix}.launch
 roslaunch exploration_benchmark {number_robots}_{method}_node.launch
 # start data logging and evaluating the exploration performance
 cd exploration_benchmark/scripts
-python exploration_metric_for_{number_robots}_{suffix}.py '../bluprints/{env}.pgm' '../bluprints/{env}.yaml'
+python exploration_metric_for_{number_robots}_{suffix}.py '../blueprints/{env}.pgm' '../blueprints/{env}.yaml'
 ```
 
 For example, 
@@ -87,7 +87,7 @@ roslaunch exploration_benchmark single_mmpf_node.launch
  Then, start a new terminal and use our proposed metrics to evaluate the exploration performance:
 ```bash
 cd exploration_benchmark/scripts
-python exploration_metric_for_single_robot.py '../bluprints/room.pgm' '../bluprints/room.yaml'
+python exploration_metric_for_single_robot.py '../blueprints/room.pgm' '../blueprints/room.yaml'
 ```
  At last, choose "Publish Point" button in the rviz and then click anywhere in the map to start the exploration.
 
@@ -103,7 +103,7 @@ roslaunch exploration_benchmark two_cost_node.launch
 
 ```bash
 cd exploration_benchmark/scripts
-python exploration_metric_for_two_robots.py '../bluprints/corridor.pgm' '../bluprints/corridor.yaml'
+python exploration_metric_for_two_robots.py '../blueprints/corridor.pgm' '../blueprints/corridor.yaml'
 ```
 
 ## Run DRL-based Exploration in Gazebo (Level-1)
@@ -118,7 +118,7 @@ roslaunch sim_env room_env_single_robot.launch
 roslaunch sim_env single_robot.launch
 roslaunch exploration_benchmark single_rl_node.launch
 cd exploration_benchmark/scripts
-python exploration_metric_for_single_robot.py '../bluprints/room.pgm' '../bluprints/room.yaml'
+python exploration_metric_for_single_robot.py '../blueprints/room.pgm' '../blueprints/room.yaml'
 ```
 
 Then, start a new terminal and run the DRL-based exploration,
@@ -139,7 +139,7 @@ roslaunch sim_env room_far_env_two_robots.launch
 roslaunch sim_env two_robots.launch
 roslaunch exploration_benchmark two_rl_node.launch
 cd exploration_benchmark/scripts
-python exploration_metric_for_two_robots.py '../bluprints/room.pgm' '../bluprints/room.yaml'
+python exploration_metric_for_two_robots.py '../blueprints/room.pgm' '../blueprints/room.yaml'
 ```
 
 Then, start a new terminal and run the DRL-based exploration,
