@@ -6,7 +6,7 @@
 
   <!-- <env name="GAZEBO_RESOURCE_PATH" value="$(find sim_env)/gazebo_images/includes/meshes"/> -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="/home/nics/workspace/benchmark/world/square_loop.world"/>
+    <arg name="world_name" value="/home/nics/workspace/benchmark/world/loop.world"/>
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
