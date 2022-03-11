@@ -2,7 +2,7 @@
 
 **Explore-Bench** is developed aiming to evaluate traditional frontier-based and deep-reinforcement-learning-based autonomous exploration approaches in a unified and comprehensive way.  
 
-The related paper "Explore-Bench: Data Sets, Metrics and Evaluations for Frontier-based and Deep-reinforcement-learning-based Autonomous Exploration" is submitted to the 2022 International Conference on Robotics and Automation (ICRA 2022).
+The related paper ["Explore-Bench: Data Sets, Metrics and Evaluations for Frontier-based and Deep-reinforcement-learning-based Autonomous Exploration"](https://arxiv.org/abs/2202.11931) is accepted to the 2022 International Conference on Robotics and Automation (ICRA 2022).
 
 Features:
 

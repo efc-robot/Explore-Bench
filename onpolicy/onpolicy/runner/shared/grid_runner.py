@@ -17,9 +17,9 @@ import torch.nn as nn
 def _t2n(x):
     return x.detach().cpu().numpy()
 
-class GazeboRunner(Runner):
+class GridRunner(Runner):
     def __init__(self, config):
-        super(GazeboRunner, self).__init__(config)
+        super(GridRunner, self).__init__(config)
         self.init_hyperparameters()
         self.init_map_variables() 
 
