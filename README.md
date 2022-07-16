@@ -54,6 +54,16 @@ echo 'export TURTLEBOT3_MODEL=burger' > ~/.bashrc
 
 After installing these dependencies, put these packages in your ROS workspace (i.e. `catkin_ws/src`) and `catkin_make`.
 
+### Other Dependencies
+
+Except for the DRL-related scripts (running under Python3.8), we use C++ and Python2.7 to implement the benchmark.
+
+There are some packages to be installed:
+
+```
+pip install autolab_core==0.0.14
+```
+
 ## Run Frontier-based Exploration in Gazebo (Level-1)
 
 Template:
@@ -190,4 +200,17 @@ python GridEnv.py cost 1 ../onpolicy/onpolicy/envs/GridEnv/datasets/corner.pgm
 python GridEnv.py mmpf 2 ../onpolicy/onpolicy/envs/GridEnv/datasets/corner.pgm
 # evaluate mmpf in corner env (1 robots)
 python GridEnv.py mmpf 1 ../onpolicy/onpolicy/envs/GridEnv/datasets/corner.pgm
+```
+
+## Citation
+
+If you find our work useful in your research, please consider citing:
+
+```
+@article{xu2022explore,
+  title={Explore-Bench: Data Sets, Metrics and Evaluations for Frontier-based and Deep-reinforcement-learning-based Autonomous Exploration},
+  author={Xu, Yuanfan and Yu, Jincheng and Tang, Jiahao and Qiu, Jiantao and Wang, Jian and Shen, Yuan and Wang, Yu and Yang, Huazhong},
+  journal={arXiv preprint arXiv:2202.11931},
+  year={2022}
+}
 ```
