@@ -207,10 +207,12 @@ python GridEnv.py mmpf 1 ../onpolicy/onpolicy/envs/GridEnv/datasets/corner.pgm
 If you find our work useful in your research, please consider citing:
 
 ```
-@article{xu2022explore,
-  title={Explore-Bench: Data Sets, Metrics and Evaluations for Frontier-based and Deep-reinforcement-learning-based Autonomous Exploration},
+@inproceedings{xu2022explore,
+  title={Explore-bench: Data sets, metrics and evaluations for frontier-based and deep-reinforcement-learning-based autonomous exploration},
   author={Xu, Yuanfan and Yu, Jincheng and Tang, Jiahao and Qiu, Jiantao and Wang, Jian and Shen, Yuan and Wang, Yu and Yang, Huazhong},
-  journal={arXiv preprint arXiv:2202.11931},
-  year={2022}
+  booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+  pages={6225--6231},
+  year={2022},
+  organization={IEEE}
 }
 ```
