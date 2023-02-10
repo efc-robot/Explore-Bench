@@ -49,7 +49,7 @@ sudo apt install ros-melodic-turtlebot3*
 sudo apt install ros-melodic-bfl
 pip install future
 sudo apt install ros-melodic-teb-local-planner
-echo 'export TURTLEBOT3_MODEL=burger' > ~/.bashrc
+echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 ```
 
 After installing these dependencies, put these packages in your ROS workspace (i.e. `catkin_ws/src`) and `catkin_make`.
