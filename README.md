@@ -52,7 +52,13 @@ sudo apt install ros-melodic-teb-local-planner
 echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
 ```
 
-After installing these dependencies, put these packages in your ROS workspace (i.e. `catkin_ws/src`) and `catkin_make`.
+After installing these dependencies, put these packages in your ROS workspace (i.e. `catkin_ws/src`) and `catkin_make`.  
+**Importantly, the LiDAR range used in our paper is 7m, so you should check the range of base_scan in `turtlebot3_burger.gazebo.xacro`.**   
+Specially,
+```bash
+roscd turtlebot3_description
+gedit turtlebot3_burger.gazebo.xacro # modify the range of base_scan to 7m
+```
 
 ### Other Dependencies
 
