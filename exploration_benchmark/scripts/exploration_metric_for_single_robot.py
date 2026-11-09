@@ -35,7 +35,7 @@ single_robot_coverage_rate_list = [0 for i in range(num_robots)]
 
 def get_gt(pgm_file, yaml_file):
     map_img = np.array(Image.open(pgm_file))
-    map_info = yaml.load(open(yaml_file, mode='r'))
+    map_info = yaml.load(open(yaml_file, mode='r'), Loader=yaml.SafeLoader)
     gt_area = (np.sum((map_img != 205).astype(int)))*map_info['resolution']*map_info['resolution']
     return gt_area
 
